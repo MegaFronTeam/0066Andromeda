@@ -83,10 +83,20 @@ function eventHandler() {
 	});
 
 	const swiper4 = new Swiper(".sLogos__slider--js", {
-		// slidesPerView: 5,
 		slidesPerView: "auto",
 		spaceBetween: 30,
-		// loop: true,
+		loop: true,
+		speed: 3000,
+		autoplay: {
+			delay: 400,
+			disableOnInteraction: false,
+		},
+		freeMode: {
+			enabled: true,
+			momentum: false,
+		},
+		grabCursor: false,
+		allowTouchMove: false,
 	});
 
 	// Отслеживание видимости headerBlock__btn
