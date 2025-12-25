@@ -63,8 +63,8 @@ body {
 		height: 100%;
 		@include mt;
 		// background-color: $body-color;
-		background-color: rgba($body-color, 0.8);
-		backdrop-filter: blur(5px);
+		background-color: #fff;
+		// backdrop-filter: blur(5px);
 		opacity: 0;
 		z-index: -1;
 		// left: 200px;
@@ -88,11 +88,6 @@ body {
 		overflow: hidden;
 		/* Other browsers */
 		overscroll-behavior: none;
-
-		&::before {
-			z-index: 99;
-			opacity: 0.76;
-		}
 	}
 }
 

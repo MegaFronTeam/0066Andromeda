@@ -92,6 +92,24 @@
 	&__btn {
 		width: rem(300);
 		margin-bottom: rem(40);
+		&--fixed {
+			@include media-breakpoint-up(md) {
+				display: none;
+			}
+			@include media-breakpoint-down(md) {
+				position: fixed;
+				bottom: 15px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: calc(100% - rem(30));
+				z-index: 120;
+				margin-bottom: 0;
+				transition: transform 0.3s ease-in-out;
+				&:not(.active) {
+					transform: translateX(-50%) translateY(calc(100% + 25px));
+				}
+			}
+		}
 	}
 
 	&__title {
@@ -164,3 +182,9 @@
 }
 
 // end.headerBlock
+
+.fixed {
+	.headerBlock__btn--fixed {
+		transform: translateX(-50%) !important;
+	}
+}

@@ -1,11 +1,28 @@
 .top-nav {
-	--sPT: #{rem(40)};
-	--sPB: #{rem(40)};
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(40)};
+		--sPB: #{rem(40)};
+	}
+	--sPT: #{rem(30)};
+	--sPB: #{rem(30)};
 	position: absolute;
 	width: 100%;
 	left: 0;
 	top: 0;
 	z-index: 100;
+	transition: padding 0.3s ease-in-out;
+	backdrop-filter: blur(7.199999809265137px);
+	&.fixed {
+		--sPT: #{rem(18)};
+		--sPB: #{rem(18)};
+		position: fixed;
+		background: rgba(242, 246, 255, 0.8);
+		.btn {
+			@include media-breakpoint-down(sm) {
+				display: none !important;
+			}
+		}
+	}
 
 	text-align: left;
 	// --sTPB: #{rem()};
@@ -13,7 +30,9 @@
 		// --bs-gutter-x: #{rem()};
 		// @include media-breakpoint-up(md) {
 		align-items: center;
-		--bs-gutter-y: 16px;
+		@include media-breakpoint-up(lg) {
+			--bs-gutter-y: 16px;
+		}
 		// }
 	}
 	.section-title {
@@ -33,6 +52,9 @@
 		font-size: 14px;
 		padding: 10px 16px;
 		font-weight: 400;
+		@include media-breakpoint-down(sm) {
+			margin-top: 1rem;
+		}
 	}
 
 	@include media-breakpoint-up(sm) {

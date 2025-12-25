@@ -12,10 +12,9 @@ mixin mob-mnu()
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
 	+b.menu-mobile--js
-		+b.toggle-menu-mobile--js
-			span
 		+e.inner
-			+mnu()
+			.container.p-lg-0
+				+mnu()
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
@@ -27,11 +26,11 @@ mixin top-nav()
 				+e.col.col-lg-auto.col-sm.col-auto
 					a(href="/")
 						img(src="img/logo.svg", alt="") 
-				.col-lg.order-lg-0.order-last
+				.col-lg.order-lg-0.order-last.m-0
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
-							+menu-toggle()
-							+mnu()
+							.container.p-lg-0
+								+mnu()
 				+e.col.col-sm-auto
 					a.btn.btn-outline-primary.w-100(href="#") Записаться на демо
 	// end top-nav

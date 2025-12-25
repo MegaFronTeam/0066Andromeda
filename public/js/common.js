@@ -88,6 +88,51 @@ function eventHandler() {
 		spaceBetween: 30,
 		// loop: true,
 	});
+
+	// Отслеживание видимости headerBlock__btn
+	const headerBtn = document.querySelector(".headerBlock__btn");
+	const hheaderBtnFixed = document.querySelector(".headerBlock__btn--fixed");
+	let headerBtnObserver = null;
+
+	function initHeaderBtnObserver() {
+		if (!headerBtn) return;
+
+		// Отключаем предыдущий observer, если есть
+		if (headerBtnObserver) {
+			headerBtnObserver.disconnect();
+		}
+
+		headerBtnObserver = new IntersectionObserver(
+			entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						// Кнопка видна - убираем fixed класс
+						hheaderBtnFixed.classList.remove("active");
+					} else {
+						// Кнопка скрылась - добавляем fixed класс
+						hheaderBtnFixed.classList.add("active");
+					}
+				});
+			},
+			{
+				threshold: 0,
+				rootMargin: "0px",
+			}
+		);
+
+		headerBtnObserver.observe(headerBtn);
+	}
+
+	initHeaderBtnObserver();
+
+	// Пересоздаём observer при resize
+	window.addEventListener(
+		"resize",
+		() => {
+			initHeaderBtnObserver();
+		},
+		{passive: true}
+	);
 }
 if (document.readyState !== "loading") {
 	eventHandler();
