@@ -1,0 +1,18 @@
+mixin sVideo(data)
+	// start sVideo
+	+b.SECTION.sVideo.section#sVideo&attributes(attributes).d-none.d-md-block
+		.container
+			+b.section-title
+				h2 Смотрите видео-обзор терминала 
+					span с комментариями старшего аналитика
+				
+			+b.video-block(data-src="https://www.youtube.com/watch?v=PUdyuKaGQd4" data-fancybox)
+				+e.front
+					+e.man
+						+img("img/man.png")
+						+e.btn
+						+e.caption.small
+							+e.title Никанор Халин
+							+e.text Старший аналитик по металлургическому и горнодобывающему сектору
+				+e.back
+	// end sVideo

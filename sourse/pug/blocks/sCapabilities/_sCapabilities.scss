@@ -1,0 +1,140 @@
+// start .sCapabilities
+.sCapabilities {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -34%;
+		opacity: 0.5;
+		transform: matrix(
+			0.971041,
+			0.238915,
+			-0.750359,
+			0.66103,
+			743.406,
+			-121.492
+		);
+		border: 1px solid $primary;
+		border-radius: 50%;
+		width: rem(1805);
+		aspect-ratio: 1;
+	}
+
+	.row {
+		@include media-breakpoint-up(xl) {
+			--bs-gutter-x: #{rem(40)};
+		}
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sCapabilities
+
+.dd-group {
+	position: relative;
+	z-index: 2;
+	--sp-x: 40px;
+	--sp-y: 32px;
+
+	&__item {
+		backdrop-filter: blur(18px);
+		box-shadow: 0 30px 59px 0 rgba(116, 135, 204, 0.11);
+		background:
+			rgba(240, 244, 254, 0.3),
+			radial-gradient(
+				53.86% 93.27% at 75.32% 0%,
+				#fff 0%,
+				rgba(255, 255, 255, 0) 100%
+			);
+		margin-bottom: rem(8);
+		&:nth-child(1) {
+			position: relative;
+			overflow: hidden;
+			&::before {
+				content: url(../img/moon.svg);
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, -20%);
+				z-index: -1;
+				filter: blur(354.8999938964844px);
+			}
+		}
+		&.active {
+			--rotate: 0;
+		}
+	}
+	&__head {
+		padding: var(--sp-y) var(--sp-x);
+		@include rfs(32px);
+		font-weight: 500;
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			width: rem(22);
+			height: rem(2);
+			background-color: $primary;
+			position: absolute;
+			right: var(--sp-x);
+			position: absolute;
+			top: 50%;
+			@include mt;
+		}
+		&::before {
+			transform: translateY(-50%) rotate(var(--rotate, 180deg));
+		}
+		&::after {
+			// top: 50%;
+			transform: translateY(-50%) rotate(var(--rotate, 270deg));
+		}
+	}
+
+	&__content {
+		padding: rem(10) var(--sp-x) var(--sp-y);
+	}
+	&__col {
+		@include media-breakpoint-only(md) {
+			columns: 2;
+		}
+		@include media-breakpoint-up(lg) {
+			max-width: calc(#{rem(374)} + var(--bs-gutter-x) * 2);
+		}
+	}
+	&__title {
+		font-weight: 500;
+		margin-bottom: 1em;
+	}
+	ul {
+		padding-left: em(30);
+	}
+}
+
+.dd-group__content {
+	&:not(.active) {
+		display: none;
+	}
+}

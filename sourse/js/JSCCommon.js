@@ -15,9 +15,10 @@ class JSCCommon {
 	}
 	static modalCall() {
 		const link = '[data-fancybox="modal"], .link-modal-js';
-		Fancybox.defaults.autoFocus = false;
-		Fancybox.defaults.placeFocusBack = false;
 
+		Fancybox.bind("[data-fancybox]", {
+			// Your custom options
+		});
 		Fancybox.bind(link, {
 			arrows: false,
 			// // infobar: false,
@@ -417,7 +418,7 @@ class JSCCommon {
 
 	static init() {
 		this.modalCall();
-		// this.tabsCostume('tabs');
+		this.tabsCostume("tabs");
 		this.mobileMenu();
 		this.inputMask();
 		// this.sendForm();

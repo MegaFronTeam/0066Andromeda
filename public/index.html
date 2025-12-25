@@ -23,239 +23,561 @@
 	</head>
 	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
-			<script>addBlock(`header`)</script>
-			<div id="headerWrap"></div>
-			<main>
-				<svg class="icon icon-truck ">
-					<use xlink:href="img/svg/sprite.svg#truck"></use>
-				</svg>
-				<!-- start headerBlock-->
-				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-							<svg class="icon icon-telegram ">
-								<use xlink:href="img/svg/sprite.svg#telegram"></use>
-							</svg>
-							<svg class="iconC iconC-telegram ">
-								<use xlink:href="img/svg/spriteC.svg#telegram"></use>
-							</svg>
+			<!-- start top-nav-->
+			<div class="top-nav section block-with-lazy">
+				<div class="container">
+					<div class="top-nav__row row">
+						<div class="col-sm-auto col d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+							</div>
 						</div>
-						<div class="row"></div>
+						<div class="top-nav__col col-lg-auto col-sm col-auto"><a href="/"><img src="img/logo.svg" alt=""/></a>
+						</div>
+						<div class="col-lg order-lg-0 order-last">
+							<div class="menu-mobile menu-mobile--js">
+								<div class="menu-mobile__inner">
+									<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+									</div>
+									<nav>
+										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Возможности платформы</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Видеообзор</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Тарифы</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="top-nav__col col-sm-auto"><a class="btn btn-outline-primary w-100" href="#">Записаться на демо</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end top-nav-->
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock section text-center" id="headerBlock">
+					<div class="container">
+						<div class="section-title">
+							<h1><span>Андромеда</span> — галактика инвестирования</h1>
+							<p>Информационно-аналитическая платформа для профессионального инвестора и аналитика</p>
+						</div>
+						<div class="text-secondary small mb-3">Выберите что вас интересует:</div>
+						<ul class="headerBlock__list">
+							<li><a class="active" href="#"> Акции</a></li>
+							<li><a href="#"> Облигации</a></li>
+							<li><a href="#"> Сырьевые рынки</a></li>
+							<li><a href="#"> Казначейские операции</a></li>
+							<li><a href="#"> Сделки M&A</a></li>
+							<li><a href="#"> Управление активами</a></li>
+						</ul>
+						<a class="headerBlock__btn btn btn-primary" href="#">Попробовать бесплатно
+						</a>
+					</div>
+					<div class="headerBlock__container container"><img class="head-img res-i" src="img/head-img.png" alt="" loading="lazy"/>
+					</div>
+					<div class="container">
+						<div class="headerBlock__row row">
+							<div class="headerBlock__col col-md-3 col-6">
+								<div class="headerBlock__item"><img src="img/head-icon-1.svg" alt="" loading="lazy"/>
+									<div class="headerBlock__title">Аналитические сервисы и&nbsp;функции (FA, DES, BS, etc.)
+									</div>
+								</div>
+							</div>
+							<div class="headerBlock__col col-md-3 col-6">
+								<div class="headerBlock__item"><img src="img/head-icon-2.svg" alt="" loading="lazy"/>
+									<div class="headerBlock__title">Рыночные, макро  и&nbsp;индустриальные данные
+									</div>
+								</div>
+							</div>
+							<div class="headerBlock__col col-md-3 col-6">
+								<div class="headerBlock__item"><img src="img/head-icon-3.svg" alt="" loading="lazy"/>
+									<div class="headerBlock__title">Аналитика Эйлера <br> и&nbsp;других домов
+									</div>
+								</div>
+							</div>
+							<div class="headerBlock__col col-md-3 col-6">
+								<div class="headerBlock__item"><img src="img/head-icon-4.svg" alt="" loading="lazy"/>
+									<div class="headerBlock__title">Новости от&nbsp;СМИ и&nbsp;Telegram-каналов в&nbsp;одном месте
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end headerBlock-->
-				<!-- start sCatalog-->
-				<div class="sCatalog section">
+				<!-- start sLogos-->
+				<section class="sLogos section" id="sLogos">
 					<div class="container">
 						<div class="section-title text-center">
-							<h2>sCatalog</h2>
-							<p>Выкупаем проблемные автомобили в день обращения</p>
+							<h6 class="fw-400 text-secondary"> <span>40+</span>управляющих компаний и корпораций пользуются платформой</h6>
 						</div>
-						<div class="sCatalog__row row">
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+					</div>
+					<div class="sLogos__slider sLogos__slider--js swiper">
+						<div class="swiper-wrapper">
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-1.svg" loading="lazy" alt=""/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-2.svg" loading="lazy" alt=""/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-3.svg" loading="lazy" alt=""/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-4.svg" loading="lazy" alt=""/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-5.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-5.svg" loading="lazy" alt=""/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-6.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-6.svg" loading="lazy" alt=""/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-7.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-7.svg" loading="lazy" alt=""/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-8.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-8.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-9.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-10.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-11.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-12.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-13.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-14.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-15.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-16.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-17.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-18.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-19.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-20.svg" loading="lazy" alt=""/>
+							</div>
+							<div class="sLogos__slide swiper-slide"><img src="img/logos/logo-21.svg" loading="lazy" alt=""/>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- end sCatalog-->
+				</section>
+				<!-- end sLogos-->
+				<!-- start sCapabilities-->
+				<section class="sCapabilities section" id="sCapabilities">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>Возможности <span>платформы</span></h2>
+						</div>
+						<div class="dd-group dd-group-js">
+							<div class="dd-group__item active">
+								<div class="dd-group__head dd-head-js">Акции
+								</div>
+								<div class="dd-group__content dd-content-js active">
+									<div class="row gy-4">
+										<div class="col order-lg-last"><img class="res-i" src="img/tab-1.png" alt="" loading="lazy"/>
+										</div>
+										<div class="dd-group__col col-lg-auto">
+											<div>
+												<div class="dd-group__title">Ключевой функционал
+												</div>
+												<ul>
+													<li>Структурированная отчетность и ключевые показатели</li>
+													<li>Мультипликаторы и доходности (текущие, прогнозные, исторические)</li>
+													<li>Наложение драйверов (курс, цена металла и др.) на цену акций и мультипликаторы</li>
+													<li>Прогнозы показателей  и консенсус-оценки</li>
+													<li>Выгрузка данных в Excel</li>
+												</ul>
+											</div>
+											<div>
+												<div class="dd-group__title">Какие проблемы решает
+												</div>
+												<ul>
+													<li>Быстрый поиск инвестиционных идей через графики с оценочными метриками</li>
+													<li>Единое пространство для анализа компании: цена, отчётность, события, макро, состояние отрасли</li>
+													<li>Сравнение с пирами и историческими оценками в один клик</li>
+													<li>Доступ к отраслевым и корпоративным обзорам</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">Облигации
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="row gy-4">
+										<div class="col order-lg-last"><img class="res-i" src="img/tab-2.png" alt="" loading="lazy"/>
+										</div>
+										<div class="dd-group__col col-lg-auto">
+											<div>
+												<div class="dd-group__title">Ключевой функционал
+												</div>
+												<ul> 
+													<li>Все облигации в одной таблице</li>
+													<li>Карты рынка облигаций (график доходности,  дюрация, сравнение)</li>
+													<li>Расчет доходности в реальном времени</li>
+													<li>Анализ исторического спреда</li>
+												</ul>
+											</div>
+											<div>
+												<div class="dd-group__title">Какие задачи решает
+												</div>
+												<ul>
+													<li>Экономия времени при подборе облигаций: сравнение по ставке, дюрации, объемам, рейтингу, цене</li>
+													<li>Визуализация лучших по доходности облигаций на карте рынка</li>
+													<li>Расчеты по облигациям со сложными структурами: прогнозный кэшфлоу по флоутерам, спред к RUONIA, реальная дюрация без завышения, дюрация к оферте (с возможностью выбрать к которой), показ текущей доходности для бессрочных</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">Сырьевые рынки
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="row gy-4">
+										<div class="col order-lg-last"><img class="res-i" src="img/tab-3.png" alt="" loading="lazy"/>
+										</div>
+										<div class="dd-group__col col-lg-auto">
+											<div>
+												<div class="dd-group__title">Ключевой функционал
+												</div>
+												<ul>
+													<li>Самый большой скринер цен на сырьё в РФ</li>
+													<li>Самый большой скринер цен на сырьё в РФ</li>
+													<li>Индустриальные метрики: ставки фрахта, TC/RC и др</li>
+													<li>Структура производства и потребления сырья (скоро)</li>
+													<li>Выгрузка данных в Excel</li>
+												</ul>
+											</div>
+											<div>
+												<div class="dd-group__title">Какие проблемы решает
+												</div>
+												<ul>
+													<li>Кривая себестоимости (скоро) и баланс рынка по ключевым сырьевым товарам   </li>
+													<li>Доступ к уникальным и закрытым ценам (например, Urals)          </li>
+													<li>Прогнозирование цен без необходимости глубоко погружаться в рынок: бычьи, стрессовые и среднециклические сценарии, прогнозы, консенсус</li>
+													<li>Квартальные отчеты про состояние отраслей: экономика нефти и нефтепродуктов, металлургия электроэнергетика и другие</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sCapabilities-->
+				<!-- start sAnalytics-->
+				<section class="sAnalytics section d-none d-lg-block" id="sAnalytics">
+					<div class="container">
+						<div class="section-title">
+							<h2>Аналитика и информация для:</h2>
+						</div>
+						<div class="sAnalytics__row row">
+							<div class="sAnalytics__col col-4">
+								<div class="sAnalytics__item">
+									<div class="sAnalytics__title">
+									</div>
+									<ul>
+										<li>Отраслевые обзоры и аналитика</li>
+										<li>Макроэкономическая статистика</li>
+										<li>База данных по компаниям</li>
+										<li>Мультипликаторы глобальных и российских компаний</li>
+									</ul><img class="res-i" src="img/sAnalytics-1.png" alt="" loading="lazy"/>
+								</div>
+							</div>
+							<div class="sAnalytics__col col-4">
+								<div class="sAnalytics__item">
+									<div class="sAnalytics__title">Казначейские операции
+									</div>
+									<ul>
+										<li>Ежедневный обзор денежного рынка: ставки, овернайт и на длинные сроки, стоимость привлечения денег, свопы на ключевую ставку, юаневые ставки, операции с ЦБ, баланс федерального казначейства</li>
+										<li>Рыночные данные в реальном времени</li>
+										<li>Макроэкономическая статистика и прогнозы</li>
+									</ul><img class="res-i" src="img/sAnalytics-2.png" alt="" loading="lazy"/>
+								</div>
+							</div>
+							<div class="sAnalytics__col col-4">
+								<div class="sAnalytics__item">
+									<div class="sAnalytics__title">Управление активами
+									</div>
+									<ul>
+										<li>Обзор ключевых классов активов (акции, облигации, ПИФы, недвижимость и др.)</li>
+										<li>Консенсус-прогнозы (скоро)</li>
+										<li>Прогнозы и скринеры по акциям и облигациям</li>
+										<li>Подбор перспективных идей и монитор ликвидности</li>
+									</ul><img class="res-i" src="img/sAnalytics-3.png" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAnalytics-->
+				<!-- start sVideo-->
+				<section class="sVideo section d-none d-md-block" id="sVideo">
+					<div class="container">
+						<div class="section-title">
+							<h2>Смотрите видео-обзор терминала <span>с комментариями старшего аналитика</span></h2>
+						</div>
+						<div class="video-block" data-src="https://www.youtube.com/watch?v=PUdyuKaGQd4" data-fancybox="data-fancybox">
+							<div class="video-block__front">
+								<div class="video-block__man"><img src="img/man.png" alt="" loading="lazy"/>
+									<div class="video-block__btn">
+									</div>
+									<div class="video-block__caption small">
+										<div class="video-block__title">Никанор Халин
+										</div>
+										<div class="video-block__text">Старший аналитик по металлургическому и горнодобывающему сектору
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="video-block__back">
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sVideo-->
+				<!-- start sEvaluate-->
+				<section class="sEvaluate section d-none d-lg-block" id="sEvaluate">
+					<div class="container">
+						<div class="sEvaluate__block panel">
+							<div class="section-title">
+								<h2>Оцените возможности <span>профессиональной аналитической платформы</span></h2>
+							</div>
+							<div class="h5 mb-5">Первые <span class="text-primary">7 дней</span> бесплатно</div><a class="btn btn-primary" href="#">Записаться на демо</a><img src="img/sEvaluate-img.png" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</section>
+				<!-- end sEvaluate-->
+				<!-- start sLib-->
+				<section class="sLib section" id="sLib">
+					<div class="container">
+						<div class="section-title">
+							<div class="row gy-4">
+								<div class="col-lg-6">
+									<h2>Библиотека обзоров  <span>и данных на аналитическом портале Эйлер</span></h2>
+								</div>
+								<div class="col-lg-6">
+									<p>Источник независимой и актуальной аналитики по отраслям, эмитентам и секторам экономики. Доступ к макроэкономическим обзорам, исследованиям, моделям и прогнозам от команды аналитиков с опытом работы на фондовом рынке 15+ лет</p>
+								</div>
+							</div>
+						</div>
+						<div class="sLib__row row gy-4">
+							<div class="col-md-6">
+								<h5 class="mb-4">Углубленные обзоры по отраслям</h5>
+								<div class="mb-4">
+									<div class="h6">Нефть и газ</div>
+								</div>
+								<div class="mb-4">
+									<div class="h6">Материалы</div>
+									<p>металлургия, удобрения, лесопродукция</p>
+								</div>
+								<div class="mb-4">
+									<div class="h6">Финансовый сектор</div>
+								</div>
+								<div class="mb-4">
+									<div class="h6">ТМТ </div>
+									<p>телекоммуникации, медиа, технологии и многоотраслевые холдинги</p>
+								</div>
+								<div class="mb-4">
+									<div class="h6">Розничная торговля и недвижимость</div>
+								</div>
+								<div class="mb-4">
+									<div class="h6">Транспорт</div>
+								</div>
+								<div class="mb-4">
+									<div class="h6">Электроэнергетика</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h5 class="mb-4">Макроэкономические и рыночные исследования</h5>
+								<div class="h6 mb-4">Макроэкономика</div>
+								<div class="h6 mb-4">Ставки, облигации, валюты</div>
+								<div class="h6 mb-4">Корпоративный долг</div>
+								<div class="h6 mb-4">Стратегия: акции</div>
+								<div class="h6 mb-4">ПИФы </div>
+								<div class="h6 mb-4">Глобальные активы</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sLib-->
+				<!-- start sKeyRews-->
+				<section class="sKeyRews section" id="sKeyRews">
+					<div class="container">
+						<div class="section-title">
+							<h2>Ключевые <span>обзоры</span></h2>
+						</div>
+						<div class="sKeyRews__row row">
+							<div class="col-lg-6"><img class="res-i" src="img/sKeyRews-1.png" alt="" loading="lazy"/>
+							</div>
+							<div class="col-lg-6"><img class="res-i" src="img/sKeyRews-2.png" alt="" loading="lazy"/>
+							</div>
+						</div><a class="btn btn-primary" href="#">Получить обзор</a>
+					</div>
+				</section>
+				<!-- end sKeyRews-->
+				<!-- start sPrices-->
+				<section class="sPrices section" id="sPrices">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>Выберите <span>свой тариф</span></h2>
+						</div>
+						<div class="sPrices__slider sPrices__slider--js swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sPrices__row">
+										<div class="sPrices__item">
+											<div class="sPrices__head">
+												<div class="sPrices__title h3">Демо
+												</div>
+												<p>Идеально, чтобы познакомиться                  с Андромедой</p>
+												<div class="sPrices__price"><span>0 </span>₽ на 7 дней
+												</div>
+											</div>
+											<div class="sPrices__body">
+												<ul>
+													<li>Доступ ко всем основным функциям на 7 дней</li>
+													<li>Обзорный пакет аналитики и данных</li>
+													<li>1 пользовательский аккаунт</li>
+													<li>Краткий видеогид и поддержка на старте</li>
+													<li>Возможность перейти на платный тариф в 1 клик</li>
+												</ul>
+											</div>
+											<div class="sPrices__footer"><a class="btn btn-primary" href="#">Получить демо бесплатно</a>
+											</div>
+										</div>
+										<div class="sPrices__item sPrices__item--pro">
+											<div class="sPrices__head">
+												<div class="sPrices__title h3">ПРО
+												</div>
+												<p>Для продвинутых инвесторов с доступом к профессиональным инструментам</p>
+												<div class="sPrices__price"><span>49 000 </span>₽ / в месяц
+												</div>
+											</div>
+											<div class="sPrices__body">
+												<ul>
+													<li>Все ключевые аналитические инструменты</li>
+													<li>Доступ к рыночным данным и прогнозам от команды Эйлера по всем секторам</li>
+													<li>1 пользовательский аккаунт</li>
+													<li>Расширенные функции и отчетность</li>
+													<li>Скринер акций, сырья, облигаций</li>
+													<li>Сравнение исторических спредов облигаций</li>
+													<li>Индикаторы и фильтры для самостоятельного анализа</li>
+													<li>Билеты на клубные встречи Эйлера с крупнейшими институциональными и розничными инвесторами</li>
+													<li>Чат с аналитиками через Инвест-консъержа  в Телеграм</li>
+												</ul>
+											</div>
+											<div class="sPrices__footer"><a class="btn btn-primary" href="#">Начать за 49 000 ₽ в месяц</a>
+											</div>
+										</div>
+										<div class="sPrices__item">
+											<div class="sPrices__head">
+												<div class="sPrices__title h3">Корпоративный
+												</div>
+												<p>Полный доступ к команде аналитиков и персональное сопровождение для команд</p>
+												<div class="sPrices__price text-secondary"><span>По запросу</span>
+												</div>
+											</div>
+											<div class="sPrices__body">
+												<ul>
+													<li>Приоритетная поддержка и выделенный менеджер</li>
+													<li>Звонки с аналитиками Эйлера один на один</li>
+													<li>Персональные настройки под бизнес-задачи</li>
+													<li>Несколько пользовательских аккаунтов</li>
+													<li>Живые финмодели компаний</li>
+													<li>+ все возможности тарифа ПРО</li>
+												</ul>
+											</div>
+											<div class="sPrices__footer"><a class="btn btn-primary" href="#">Запросить расчет тарифа</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center h5 text-secondary fw-400">100% возврат в течении 30 дней если по какой-то причине вам не подошел наш продукт</div>
+					</div>
+				</section>
+				<!-- end sPrices-->
+				<!-- start sEcosystem-->
+				<section class="sEcosystem section text-center" id="sEcosystem">
+					<div class="container">
+						<div class="section-title">
+							<h2>Экосистема сервисов <span class="d-block">и данных для инвестиций</span></h2>
+						</div><img class="res-i" src="img/sEcosystem-img.png" alt="" loading="lazy"/>
+					</div>
+				</section>
+				<!-- end sEcosystem-->
 				<!-- start sForm-->
 				<section class="sForm section" id="sForm">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sForm</h2>
+						<div class="section-title">
+							<h2>Запишитесь на бесплатное демо прямо сейчас</h2>
 						</div>
-						<div class="sForm__row row">
-						</div>
-						<div class="form-wrap">
-							<form>
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<button class="form-wrap__btn btn btn-primary" type="submit">Submit
-								</button>
-								<div class="form-wrap__policy">
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-									</label>
-								</div>
-							</form>
+						<div class="sForm__block">
+							<div class="form-wrap">
+								<form>
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="form-wrap__input-title">Компания</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="ООО «Компания»"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="form-wrap__input-title">Ваши имя и фамилия</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Виктор Иванов"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="form-wrap__input-title">E-mail</span><input class="form-wrap__input form-control" inputmode="email" name="email" type="email" placeholder="Sample@sample.com"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+									<div class="form-wrap__input-wrap form-group">
+										<label><span class="form-wrap__input-title">Номер телефона</span><input class="form-wrap__input form-control" inputmode="tel" name="tel" type="tel" placeholder="+7 (____) _____ ____ ____"/>
+										</label>
+									</div>
+									<!-- +e.input-wrap-->
+									<button class="form-wrap__btn btn btn-primary" type="submit">Попробовать бесплатно
+									</button>
+									<div class="form-wrap__policy">
+										<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Согласен получать маркетинговую рассылку в соответствии c условиями, изложенными в <a href="#">Политике конфиденциальности</a></small>
+										</label>
+										<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Согласен на обработку персональных данных в соответствии c условиями, изложенными в <a href="#">Политике конфиденциальности</a></small>
+										</label>
+									</div>
+								</form>
+							</div><img class="res-i d-none d-md-block" src="img/form-img.png" alt="" loading="lazy"/>
 						</div>
 					</div>
 				</section>
 				<!-- end sForm-->
-				<!-- start sContact-->
-				<section class="sContact section" id="sContact">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
-						</div>
-						<div class="sContact__row row">
-						</div>
-					</div>
-				</section>
-				<!-- end sContact-->
 			</main>
-			<script>addBlock(`footer`)</script>
-			<div id="footerWrap"></div>
+			<footer class="footer section">
+				<div class="container">
+					<div class="footer__copy h5 mb-4">© 2025 АО «Эйлер Аналитические Технологии» 
+					</div>
+					<div class="footer__addr text-secondary mb-4">123112, г. Москва, вн. тер. г. муниципальный округ Пресненский, Пресненская набережная, д. 10, блок С <br/><a class="text-secondary" href="tel:+74951303030"> +7 495 130 30 30</a>
+					</div>
+					<div class="row">
+						<div class="col small"> <a href="#">Политика конфиденциальности</a></div>
+						<div class="col-auto"><a href="/"><svg width="213" height="17" viewBox="0 0 213 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6913_8491)">
+<path d="M8.45132 0.272449H16.6091L24.2489 16.0553H18.7025L17.2349 13.4248H7.82546L6.35792 16.0553H0.811523L8.45132 0.272449ZM12.8971 3.83132H12.1633L9.5951 9.33543H15.4437L12.8971 3.83132ZM47.4146 0.294554V16.0774H39.6453L31.5091 4.38395C31.4228 4.20711 31.3293 4.02291 31.2285 3.83132C31.1422 3.62501 31.0487 3.52186 30.948 3.52186C30.948 3.66923 30.9552 3.81659 30.9696 3.96395C31.2141 4.75973 31.3365 5.16498 31.3365 5.17972V16.0774H26.5885V0.294554H34.3579L42.4724 11.9659C42.5587 12.1575 42.645 12.349 42.7314 12.5406C42.8321 12.7322 42.9328 12.828 43.0335 12.828C43.0191 12.6806 43.0119 12.5333 43.0119 12.3859C42.8969 11.988 42.7818 11.5828 42.6667 11.1702V0.294554H47.4146ZM50.5296 16.0332V0.250345H63.8236C66.5285 0.250345 68.3126 0.802965 69.1758 1.90821C69.9815 2.93977 70.3844 5.02499 70.3844 8.16387C70.3844 11.288 69.9887 13.3585 69.1974 14.3753C68.3341 15.4806 66.5429 16.0332 63.8236 16.0332H50.5296ZM55.2774 11.9438H63.0251C64.0467 11.9438 64.7372 11.6786 65.0969 11.1481C65.4566 10.6175 65.6365 9.62278 65.6365 8.16387C65.6365 6.69021 65.4566 5.68813 65.0969 5.15762C64.7372 4.61236 64.0467 4.33974 63.0251 4.33974H55.2774V11.9438ZM73.7847 0.250345H87.5968C89.2945 0.250345 90.4959 0.567181 91.2009 1.20085C91.9634 1.89347 92.3444 3.10924 92.3444 4.84815C92.3444 6.20391 92.1864 7.20599 91.8699 7.8544C91.5534 8.50281 90.9995 8.98912 90.2081 9.31332C91.0714 9.69645 91.6397 10.0796 91.913 10.4628C92.2008 10.8459 92.3444 11.5312 92.3444 12.5185V16.0553H87.5968V13.2258C87.5968 12.8133 87.4889 12.467 87.2731 12.1869C86.9998 11.8185 86.5897 11.6344 86.0429 11.6344H78.5327V16.0553H73.7847V0.250345ZM78.5327 4.33974V7.54494H86.1509C86.6688 7.54494 87.0357 7.43442 87.2515 7.21337C87.4817 6.97758 87.5968 6.55759 87.5968 5.95339C87.5968 5.34919 87.4817 4.9292 87.2515 4.69341C87.0213 4.45763 86.6544 4.33974 86.1509 4.33974H78.5327ZM116.629 8.16387C116.629 12.0101 116.176 14.309 115.27 15.0606C114.292 15.8711 111.342 16.2764 106.422 16.2764C102.825 16.2764 100.465 16.1437 99.343 15.8785C97.9331 15.5395 97.0405 14.8027 96.6671 13.6679C96.3794 12.7985 96.2346 10.9638 96.2346 8.16387C96.2346 4.31764 96.6809 2.01873 97.5735 1.26717C98.5518 0.44192 101.501 0.0292969 106.422 0.0292969C111.327 0.0292969 114.27 0.434553 115.248 1.24507C116.169 2.01136 116.629 4.31764 116.629 8.16387ZM100.983 8.16387C100.983 10.1827 101.206 11.3617 101.652 11.7007C102.112 12.0249 103.703 12.1869 106.422 12.1869C109.155 12.1869 110.745 12.0249 111.191 11.7007C111.652 11.3617 111.881 10.1827 111.881 8.16387C111.881 6.13023 111.652 4.9513 111.191 4.6271C110.745 4.28816 109.162 4.11869 106.443 4.11869C103.709 4.11869 102.112 4.28816 101.652 4.6271C101.206 4.9513 100.983 6.13023 100.983 8.16387ZM119.12 0.294554H127.644L131.701 9.1586C131.745 9.26175 131.796 9.60805 131.853 10.1975C131.925 10.7723 131.997 11.0596 132.068 11.0596C132.127 11.0596 132.176 10.8901 132.22 10.5512C132.278 10.1975 132.35 9.73328 132.435 9.1586L136.493 0.294554H144.586V16.0774H139.838V5.04709C139.838 4.85552 139.874 4.61973 139.946 4.33974C140.018 4.05975 140.054 3.89028 140.054 3.83132C140.054 3.71344 140.01 3.65449 139.925 3.65449C139.866 3.65449 139.795 3.74291 139.709 3.91974C139.622 4.08185 139.55 4.23659 139.493 4.38395L134.011 16.0774H130.127L124.213 4.33974C124.127 4.14817 124.047 3.9787 123.975 3.83132C123.903 3.68396 123.839 3.61028 123.782 3.61028C123.695 3.61028 123.652 3.66185 123.652 3.76502C123.652 3.77975 123.702 4.02291 123.803 4.49448C123.846 4.70078 123.867 4.87025 123.867 5.00288V16.0774H119.12V0.294554ZM147.763 16.0553V0.250345L164.381 0.250345V4.07448H152.511V6.26286H163.841V10.0649H152.511V12.2311H164.381V16.0553H147.763ZM167.208 16.0332V0.250345H180.502C183.207 0.250345 184.991 0.802965 185.854 1.90821C186.66 2.93977 187.063 5.02499 187.063 8.16387C187.063 11.288 186.667 13.3585 185.875 14.3753C185.012 15.4806 183.222 16.0332 180.502 16.0332H167.208ZM171.956 11.9438H179.703C180.725 11.9438 181.415 11.6786 181.775 11.1481C182.135 10.6175 182.315 9.62278 182.315 8.16387C182.315 6.69021 182.135 5.68813 181.775 5.15762C181.415 4.61236 180.725 4.33974 179.703 4.33974H171.956V11.9438ZM196.894 0.272449H205.052L212.692 16.0553H207.146L205.678 13.4248H196.268L194.801 16.0553H189.255L196.894 0.272449ZM201.34 3.83132H200.606L198.039 9.33543H203.886L201.34 3.83132Z" fill="#050515" />
+</g>
+<defs>
+<clipPath id="clip0_6913_8491">
+<rect width="213" height="17" fill="white" />
+</clipPath>
+</defs>
+</svg> </a></div>
+					</div>
+				</div>
+			</footer>
 		</div>
 		<!--  start modals-->
 		<div id="modal-call" style="display: none">
@@ -279,11 +601,15 @@
 						<button class="form-wrap__btn btn" type="submit">submit
 						</button>
 						<div class="form-wrap__policy">
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Согласен получать маркетинговую рассылку в соответствии c условиями, изложенными в <a href="#">Политике конфиденциальности</a></small>
+							</label>
+							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Согласен на обработку персональных данных в соответствии c условиями, изложенными в <a href="#">Политике конфиденциальности</a></small>
 							</label>
 						</div>
 						<div class="form-wrap__policy">
-							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Согласен получать маркетинговую рассылку в соответствии c условиями, изложенными в <a href="#">Политике конфиденциальности</a></small>
+							</label>
+							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Согласен на обработку персональных данных в соответствии c условиями, изложенными в <a href="#">Политике конфиденциальности</a></small>
 							</label>
 						</div>
 					</form>

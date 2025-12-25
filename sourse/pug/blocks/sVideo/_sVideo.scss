@@ -1,0 +1,90 @@
+// start .sVideo
+.sVideo {
+	@include media-breakpoint-up(xl) {
+		--sPT: #{rem(100)};
+	}
+	--sPT: #{rem(60)};
+	--sPB: #{rem(0)};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+		max-width: rem(500);
+		h2 {
+			margin-bottom: -50%;
+			max-width: em(200);
+		}
+		span {
+			display: inline-block;
+		}
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sVideo
+
+.video-block {
+	aspect-ratio: 1278 / 642;
+	@include bgs;
+	background-image: url(../img/video-bg.jpg);
+	cursor: pointer;
+	display: block;
+	&__front {
+		// pointer-events: none;
+	}
+	&__man {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 533px;
+		position: relative;
+	}
+	&__btn {
+		@include a-cent;
+		background: rgba(90, 140, 255, 1);
+		width: rem(96);
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-image: url(../img/play.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 60%;
+		cursor: pointer;
+		@include mt;
+		opacity: 0.3;
+	}
+	&:hover &__btn {
+		opacity: 0.8;
+	}
+	&__caption {
+		position: absolute;
+		left: 90%;
+		bottom: 100px;
+		width: 100%;
+		max-width: 300px;
+		text-wrap: balance;
+		font-size: 14px;
+	}
+	&__text {
+		font-size: 12px;
+		color: $secondary;
+	}
+}

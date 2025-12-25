@@ -22,6 +22,11 @@
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(24 / #{$h} *1em );
 }
+.icon-globus {
+	$h: 8;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(8 / #{$h} *1em );
+}
 .icon-instagram {
 	$h: 24;
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);

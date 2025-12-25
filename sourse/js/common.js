@@ -11,6 +11,34 @@ function eventHandler() {
 		JSCCommon.setFixedNav();
 	}
 
+	// Парсинг img с SVG и вставка inline SVG
+	function inlineSvg() {
+		document.querySelectorAll(".img-to-svg-js").forEach(img => {
+			const imgURL = img.src;
+			const imgClass = img.className;
+			const imgID = img.id;
+
+			fetch(imgURL)
+				.then(response => response.text())
+				.then(data => {
+					const parser = new DOMParser();
+					const svg = parser
+						.parseFromString(data, "image/svg+xml")
+						.querySelector("svg");
+
+					if (svg) {
+						if (imgID) svg.id = imgID;
+						if (imgClass) svg.classList.add(...imgClass.split(" "));
+
+						img.parentNode.replaceChild(svg, img);
+					}
+				})
+				.catch(error => console.log("Error loading SVG:", error));
+		});
+	}
+
+	inlineSvg();
+
 	window.addEventListener(
 		"scroll",
 		() => {
@@ -48,16 +76,17 @@ function eventHandler() {
 		freeMode: true,
 		watchOverflow: true,
 	});
-
-	const swiper4 = new Swiper(".sBanners__slider--js", {
-		// slidesPerView: 5,
-		...defaultSl,
+	new Swiper(".sPrices__slider--js", {
 		slidesPerView: "auto",
 		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
+		watchOverflow: true,
+	});
+
+	const swiper4 = new Swiper(".sLogos__slider--js", {
+		// slidesPerView: 5,
+		slidesPerView: "auto",
+		spaceBetween: 30,
+		// loop: true,
 	});
 }
 if (document.readyState !== "loading") {

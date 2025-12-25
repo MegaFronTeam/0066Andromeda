@@ -64,7 +64,7 @@
 		"sass": "1.77.6"
 	},
 	"dependencies": {
-		"@fancyapps/ui": "^5.0.36",
+		"@fancyapps/ui": "^6.1.7",
 		"inputmask": "^5.0.9",
 		"jquery": "^3.7.1",
 		"select2": "^4.1.0-rc.0",

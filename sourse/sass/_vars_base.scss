@@ -1,4 +1,13 @@
-$default-font: "roboto";
+@font-face {
+  font-family: "TT Neoris";
+  src: url("../fonts/TT_Neoris_Variable.woff2") format("woff2");
+  font-weight: 100 900;          /* ВАЖНО — диапазон! */
+  font-stretch: 75% 125%;        /* если есть */
+  font-style: normal;
+  font-display: swap;
+}
+
+$default-font: "TT Neoris";
 $addr: '../fonts/';
 $file-format: woff2;
 $rfs-rem-value: 16 !default;
@@ -21,13 +30,12 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 
 $link-decoration: inherit;
 
-$spacers: ( 0: 0, );
 $position-values: ( 100: 100% );
 $border-widths: ( 1: 1px,  );
 $aspect-ratios: ( );
 
 $display-font-sizes: ( 1: 5rem) !default;
- 
+
 $zindex-levels: (
   n1: -1, 
 ) ;

@@ -1,11 +1,31 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.headerBlock.section.text-center#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+			+b.section-title
+				h1 #[span Андромеда] — галактика инвестирования
+				p Информационно-аналитическая платформа для профессионального инвестора и аналитика
+
+			.text-secondary.small.mb-3 Выберите что вас интересует:
+			+e.UL.list
+				li: a(href="#").active  Акции
+				li: a(href="#")  Облигации
+				li: a(href="#")  Сырьевые рынки
+				li: a(href="#")  Казначейские операции
+				li: a(href="#")  Сделки M&A
+				li: a(href="#")  Управление активами
+			+e.btn.btn.btn-primary(href="#") Попробовать бесплатно
+		+e.container.container
+			+img("img/head-img.png").head-img.res-i
+		.container
+			+e.row.row
+				mixin item(i,t)
+					+e.col.col-md-3.col-6
+						+e.item
+							+img(`img/head-icon-${i}.svg`)
+							+e.title!= t
+				+item(1,`Аналитические сервисы и&nbsp;функции (FA, DES, BS, etc.)`)
+				+item(2,`Рыночные, макро  и&nbsp;индустриальные данные`)
+				+item(3,`Аналитика Эйлера <br> и&nbsp;других домов`)
+				+item(4,`Новости от&nbsp;СМИ и&nbsp;Telegram-каналов в&nbsp;одном месте`)
 	// end headerBlock

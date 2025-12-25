@@ -7,7 +7,6 @@ include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
-include ../blocks/sCatalog/_sCatalog.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -34,7 +33,6 @@ block pagecontent
 					+input("select",'select')
 					+input("select",'select')(multiple)
 					button.btn.btn-primary(type="submit") submit
-		+sCatalog
 	+parts('footer')
       
 

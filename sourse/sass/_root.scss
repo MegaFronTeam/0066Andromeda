@@ -1,10 +1,15 @@
 :root {
-	--animate-delay: 1.2s;
-	--bs-body-font-size: #{$em-base};
+	--l-blue: #{$primary};
+	--l-dark-bg: #{$body-color};
+	--l-white: #fefefe;
+	--l-grey: #{$secondary};
 
-	--sPT: #{rem(80 * 0.5)};
-	--sPB: #{rem(90 * 0.5)};
-	--sTPB: #{rem(40 * 0.5)};
+	--animate-delay: 1.2s;
+	--bs-body-font-size: 14px;
+
+	--sPT: 20px;
+	--sPB: 20px;
+	--sTPB: 20px;
 
 	--fancybox-content-color: var(--bs-body-color);
 	--swiperArrowSize: #{rem(68)};
@@ -27,9 +32,10 @@
 	//  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
 
 	@include media-breakpoint-up(md) {
-		--sPT: #{rem(80)};
-		--sPB: #{rem(90)};
+		--sPT: #{rem(40)};
+		--sPB: #{rem(40)};
 		--sTPB: #{rem(40)};
+		--bs-body-font-size: #{$em-base};
 	}
 }
 .fancybox__container {

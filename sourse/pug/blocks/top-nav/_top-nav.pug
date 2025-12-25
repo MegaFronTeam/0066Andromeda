@@ -19,16 +19,19 @@ mixin mob-mnu()
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
-	+b.top-nav.block-with-lazy
+	+b.top-nav.section.block-with-lazy
 		.container
 			+e.row.row
-				.col-4
-				.col.order-lg-0.order-last
+				.col-sm-auto.col.d-lg-none
+					+menu-toggle()
+				+e.col.col-lg-auto.col-sm.col-auto
+					a(href="/")
+						img(src="img/logo.svg", alt="") 
+				.col-lg.order-lg-0.order-last
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							+menu-toggle()
 							+mnu()
-					
-				.col-auto.d-lg-none
-					+menu-toggle()
+				+e.col.col-sm-auto
+					a.btn.btn-outline-primary.w-100(href="#") Записаться на демо
 	// end top-nav

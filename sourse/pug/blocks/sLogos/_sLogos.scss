@@ -1,0 +1,50 @@
+// start .sLogos
+.sLogos {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	.section-title {
+		h6 {
+			span {
+				color: $primary;
+				font-size: 1.5em;
+				font-weight: 500;
+				position: relative;
+				top: 0.16em;
+				margin-right: em(4);
+			}
+		}
+	}
+	&__slider {
+		overflow: visible;
+	}
+	.swiper-wrapper {
+		align-items: center;
+	}
+	&__slide {
+		width: auto;
+		filter: grayscale(100%) brightness(0.5) sepia(100%) hue-rotate(190deg)
+			saturate(500%);
+		opacity: 0.6;
+		transition: opacity 0.3s ease;
+		// @include mt;
+		&:hover {
+			filter: none;
+			opacity: 1;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sLogos

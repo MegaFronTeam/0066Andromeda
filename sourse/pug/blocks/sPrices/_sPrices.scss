@@ -1,0 +1,142 @@
+// start .sPrices
+.sPrices {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__slider {
+		overflow: visible;
+		margin-bottom: calc(var(--sPB) * 2);
+	}
+	.swiper-slide {
+		@include media-breakpoint-up(xxl) {
+			width: 100%;
+		}
+		width: auto;
+	}
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+		@include media-breakpoint-up(--bs-border-radius-xl) {
+			--size: 1fr;
+		}
+		--size: 420px;
+		display: grid;
+		grid-template-columns: repeat(3, var(--size));
+		align-items: center;
+	}
+	.section-title {
+	}
+	&__item {
+		backdrop-filter: blur(18px);
+		box-shadow: 0 30px 59px 0 rgba(116, 135, 204, 0.11);
+		background:
+			rgba(240, 244, 254, 0.3),
+			radial-gradient(
+				53.86% 93.27% at 75.32% 0%,
+				#fff 0%,
+				rgba(255, 255, 255, 0) 100%
+			);
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #fff;
+		border-radius: 20px;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: absolute;
+			background-image: url(../img/moon.svg);
+			border-radius: 100%;
+			filter: blur(54.8999938964844px);
+			width: 400px;
+			aspect-ratio: 400 / 288;
+			background-repeat: no-repeat;
+			left: 0;
+			top: -150px;
+
+			background-size: contain;
+		}
+		&:nth-child(1),
+		&:nth-child(3) {
+			min-height: calc(100% - 20px);
+		}
+		&:nth-child(2) {
+			background: linear-gradient(131deg, #8cebfd 0%, #6470ff 100%);
+			border: none;
+			.btn {
+				--bs-btn-color: #000;
+				--bs-btn-bg: #fff;
+				--bs-btn-border-color: #fff;
+			}
+		}
+		.btn {
+			width: 100%;
+		}
+		ul {
+			// padding-left: rem(20);
+		}
+		li {
+			list-style: none;
+			padding-left: 30px;
+			position: relative;
+			margin-bottom: 1em;
+			&::before {
+				content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3332 4L5.99984 11.3333L2.6665 8' stroke='%235563FA' stroke-width='1.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				position: absolute;
+				left: 0;
+				margin-top: 0.2em;
+			}
+		}
+	}
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid #fff;
+		min-height: rem(240);
+		p {
+			flex-grow: 1;
+			@include media-breakpoint-up(xl) {
+				font-size: rem(20);
+			}
+		}
+	}
+
+	&__price {
+		span {
+			@include rfs(32px);
+			font-weight: 500;
+		}
+	}
+
+	&__head,
+	&__body,
+	&__footer {
+		padding: rem(24);
+	}
+	&__body {
+		padding-bottom: 0;
+		flex-grow: 1;
+	}
+
+	&__title {
+		@include media-breakpoint-up(xl) {
+			@include rfs(32px);
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sPrices

@@ -1,0 +1,39 @@
+// start .sKeyRews
+.sKeyRews {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		--bs-gutter-x: #{rem(40)};
+		--bs-gutter-y: 16px;
+		margin-bottom: 40px;
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	.btn {
+		padding-inline: 24px;
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sKeyRews

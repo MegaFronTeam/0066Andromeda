@@ -1,0 +1,14 @@
+mixin sLogos(data)
+	// start sLogos
+	+b.SECTION.sLogos.section#sLogos&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h6.fw-400.text-secondary 
+					span 40+
+					| управляющих компаний и корпораций пользуются платформой
+		+e.slider--js.swiper
+			.swiper-wrapper
+				- for (var x = 1; x < 22; x++)
+					+e.slide.swiper-slide
+						img(src="img/logos/logo-" + x + ".svg", loading="lazy" alt="")
+	// end sLogos
