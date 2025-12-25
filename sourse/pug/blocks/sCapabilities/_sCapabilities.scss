@@ -8,10 +8,10 @@
 		content: "";
 		position: absolute;
 		top: 0;
-		left: -34%;
+		left: 50%;
 		opacity: 0.5;
 		transform: matrix(
-			0.971041,
+			2.771041,
 			0.238915,
 			-0.750359,
 			0.66103,
@@ -70,6 +70,8 @@
 				rgba(255, 255, 255, 0) 100%
 			);
 		margin-bottom: rem(8);
+		border: 1px solid #fff;
+		border-radius: 20px;
 		&:nth-child(1) {
 			position: relative;
 			overflow: hidden;

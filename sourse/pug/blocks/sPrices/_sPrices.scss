@@ -2,11 +2,11 @@
 .sPrices {
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sTPB: #{rem(70)};
 
 	&__slider {
 		overflow: visible;
-		margin-bottom: calc(var(--sPB) * 2);
+		margin-bottom: calc(var(--sPB) * 1.6);
 	}
 	.swiper-slide {
 		@include media-breakpoint-up(xxl) {
@@ -61,7 +61,8 @@
 			min-height: calc(100% - 20px);
 		}
 		&:nth-child(2) {
-			background: linear-gradient(131deg, #8cebfd 0%, #6470ff 100%);
+			background: linear-gradient(164.07deg, #8cebfd 28.56%, #a3aaff 99.42%);
+
 			border: none;
 			.btn {
 				--bs-btn-color: #000;

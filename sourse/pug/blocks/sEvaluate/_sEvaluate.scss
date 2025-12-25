@@ -28,7 +28,7 @@
 		padding: 60px 40px;
 		@include media-breakpoint-up(xl) {
 			padding: 120px 80px;
-			margin-inline: 0;
+			margin-inline: -80px;
 		}
 		margin-inline: -15px;
 		img {

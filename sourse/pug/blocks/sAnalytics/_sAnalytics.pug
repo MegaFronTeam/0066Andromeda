@@ -3,17 +3,17 @@ mixin sAnalytics(data)
 	+b.SECTION.sAnalytics.section#sAnalytics&attributes(attributes).d-none.d-lg-block
 		.container
 			+b.section-title
-				h2 Аналитика и информация для:
+				h3 Аналитика и информация для:
 				
 			+e.row.row
 				mixin item(i, t)
 					+e.col.col-4
 						+e.item
-							+e.title= t
+							+e.title.h5= t
 							ul
 								block
 							+img(`img/sAnalytics-${i}.png`).res-i
-				+item(1, '')
+				+item(1, 'Сделки M&A')
 					li Отраслевые обзоры и аналитика
 					li Макроэкономическая статистика
 					li База данных по компаниям

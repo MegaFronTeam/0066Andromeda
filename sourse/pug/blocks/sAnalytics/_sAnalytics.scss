@@ -1,9 +1,12 @@
 // start .sAnalytics
 .sAnalytics {
 	--sPT: #{rem(0)};
-	// --sPB: #{rem()};
+	--sPB: #{rem(60)};
 	// --sTPB: #{rem()};
 
+	h3 {
+		@include rfs(32px);
+	}
 	&__row {
 		--bs-gutter-x: #{rem(8)};
 		// --bs-gutter-y: #{rem()};
@@ -29,7 +32,12 @@
 		}
 		ul {
 			padding-left: 1rem;
+			margin-bottom: rem(40);
 		}
+	}
+
+	&__title {
+		margin-bottom: rem(26);
 	}
 
 	@include media-breakpoint-up(xl) {

@@ -1,14 +1,14 @@
 // start .headerBlock
 .headerBlock {
-	--sPT: #{rem(180)};
+	--sPT: #{rem(132)};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sTPB: #{rem(30)};
 	h1 {
 		max-width: 15em;
 		margin-left: auto;
 		margin-right: auto;
 		line-height: 1;
-		margin-bottom: 0.2em;
+		margin-bottom: 0.23em;
 		span {
 			background: linear-gradient(134deg, #8cebfd 0%, #6470ff 49.04%);
 			background-clip: text;
@@ -23,8 +23,6 @@
 	);
 	position: relative;
 	z-index: 2;
-	min-height: 100vh;
-	min-height: calc(var(--vh, 1vh) * 100);
 	&::after {
 		content: "";
 		position: absolute;
@@ -71,7 +69,7 @@
 		gap: rem(8) rem(30);
 		list-style: none;
 		justify-content: center;
-		margin-bottom: rem(40);
+		margin-bottom: rem(30);
 		a {
 			display: inline-block;
 			padding-block: rem(8);

@@ -23,6 +23,9 @@
 		);
 
 		@include media-breakpoint-up(lg) {
+			background-image: url(../img/sForm-bg.png);
+			background-size: cover;
+			background-position: center right;
 			--sp: 80px;
 			padding: var(--sp);
 		}
