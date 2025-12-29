@@ -15,6 +15,11 @@
 				position: relative;
 				top: 0.16em;
 				margin-right: em(4);
+				@include media-breakpoint-down(sm) {
+					display: block;
+					text-align: center;
+					margin-bottom: 10px;
+				}
 			}
 		}
 	}

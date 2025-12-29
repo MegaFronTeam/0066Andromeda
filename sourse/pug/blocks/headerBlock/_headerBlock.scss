@@ -150,6 +150,13 @@
 			}
 		}
 	}
+
+	&__item {
+		img {
+			margin-bottom: 1rem;
+		}
+		line-height: 1.3;
+	}
 	@include media-breakpoint-up(xl) {
 	}
 
