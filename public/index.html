@@ -39,21 +39,23 @@
 									<div class="container p-lg-0">
 										<nav>
 											<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Возможности платформы</a>
+												<li class="menu-item" itemprop="item"><a href="#sCapabilities" itemprop="url">Возможности платформы</a>
 													<ul class="sub-menu">
-														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Облигации</a></li>
-														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Сырьевые рынки</a></li>
-														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Казначейские операции</a></li>
-														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Сделки M&amp;A</a></li>
-														<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Управление активами</a></li>
+														<li class="menu-item" itemprop="item"><a href="#stocks" itemprop="url">Акции</a></li>
+														<li class="menu-item" itemprop="item"><a href="#bonds" itemprop="url">Облигации</a></li>
+														<li class="menu-item" itemprop="item"><a href="#funds" itemprop="url">Фонды</a></li>
+														<li class="menu-item" itemprop="item"><a href="#currency" itemprop="url">Валютный рынок</a></li>
+														<li class="menu-item" itemprop="item"><a href="#commodities" itemprop="url">Сырьевые рынки</a></li>
+														<li class="menu-item" itemprop="item"><a href="#treasury2" itemprop="url">Казначейские операции</a></li>
+														<li class="menu-item" itemprop="item"><a href="#mandA2" itemprop="url">Сделки M&amp;A</a></li>
+														<li class="menu-item" itemprop="item"><a href="#assetManagement2" itemprop="url">Управление активами</a></li>
 													</ul>
 												</li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Видеообзор</a>
+												<li class="menu-item" itemprop="item"><a href="#sVideo" itemprop="url">Видеообзор</a>
 												</li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Тарифы</a>
+												<li class="menu-item" itemprop="item"><a href="#sPrices" itemprop="url">Тарифы</a>
 												</li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a>
+												<li class="menu-item" itemprop="item"><a href="#sForm" itemprop="url">Контакты</a>
 												</li>
 											</ul>
 										</nav>
@@ -61,7 +63,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="top-nav__col col-sm-auto"><a class="btn btn-outline-primary w-100" href="#">Записаться на демо</a>
+						<div class="top-nav__col col-sm-auto"><a class="btn btn-outline-primary w-100" href="#sForm">Записаться на демо</a>
 						</div>
 					</div>
 				</div>
@@ -77,14 +79,17 @@
 						</div>
 						<div class="text-secondary small mb-3">Выберите что вас интересует:</div>
 						<ul class="headerBlock__list">
-							<li><a class="active" href="#"> Акции</a></li>
-							<li><a href="#"> Облигации</a></li>
-							<li><a href="#"> Сырьевые рынки</a></li>
-							<li><a href="#"> Казначейские операции</a></li>
-							<li><a href="#"> Сделки M&A</a></li>
-							<li><a href="#"> Управление активами</a></li>
+							<li><a href="#stocks"> Акции</a></li>
+							<li><a href="#bonds"> Облигации</a></li>
+							<li><a href="#commodities"> Сырьевые рынки</a></li>
+							<li class="d-none d-lg-block"><a href="#treasury"> Казначейские операции</a></li>
+							<li class="d-none d-lg-block"><a href="#mandA"> Сделки M&A</a></li>
+							<li class="d-none d-lg-block"><a href="#assetManagement"> Управление активами</a></li>
+							<li class="d-lg-none"><a href="#treasury2"> Казначейские операции</a></li>
+							<li class="d-lg-none"><a href="#mandA2"> Сделки M&A</a></li>
+							<li class="d-lg-none"><a href="#assetManagement2"> Управление активами</a></li>
 						</ul>
-						<a class="headerBlock__btn btn btn-primary" href="#">Попробовать бесплатно
+						<a class="headerBlock__btn btn btn-primary" href="#sForm">Попробовать бесплатно
 						</a>
 					</div>
 					<div class="headerBlock__container container"><img class="head-img res-i" src="img/head-img.png" alt="" loading="lazy"/>
@@ -126,7 +131,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- end headerBlock--><a class="headerBlock__btn headerBlock__btn--fixed btn btn-primary d-lg-none" href="#">Попробовать бесплатно</a>
+				<!-- end headerBlock--><a class="headerBlock__btn headerBlock__btn--fixed btn btn-primary d-lg-none" href="#sForm">Попробовать бесплатно</a>
 				<!-- start sLogos-->
 				<section class="sLogos section" id="sLogos">
 					<div class="container">
@@ -231,10 +236,10 @@
 							<h2>Возможности <span>платформы</span></h2>
 						</div>
 						<div class="dd-group dd-group-js">
-							<div class="dd-group__item active">
+							<div class="dd-group__item" id="stocks">
 								<div class="dd-group__head dd-head-js">Акции
 								</div>
-								<div class="dd-group__content dd-content-js active">
+								<div class="dd-group__content dd-content-js">
 									<div class="row gy-4">
 										<div class="col order-lg-last"><img class="res-i" src="img/tab-1.png" alt="" loading="lazy"/>
 										</div>
@@ -264,7 +269,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="dd-group__item">
+							<div class="dd-group__item" id="bonds">
 								<div class="dd-group__head dd-head-js">Облигации
 								</div>
 								<div class="dd-group__content dd-content-js">
@@ -295,7 +300,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="dd-group__item">
+							<div class="dd-group__item" id="commodities">
 								<div class="dd-group__head dd-head-js">Сырьевые рынки
 								</div>
 								<div class="dd-group__content dd-content-js">
@@ -328,6 +333,61 @@
 									</div>
 								</div>
 							</div>
+							<div class="dd-group__mob-group d-lg-none">
+								<div class="dd-group__item" id="mandA2">
+									<div class="dd-group__head dd-head-js">Сделки M&amp;A
+									</div>
+									<div class="dd-group__content dd-content-js">
+										<div class="row gy-4">
+											<div class="dd-group__col col-lg-auto">
+												<div>
+													<ul>
+														<li>Отраслевые обзоры и аналитика</li>
+														<li>Макроэкономическая статистика</li>
+														<li>База данных по компаниям</li>
+														<li>Мультипликаторы глобальных и российских компаний</li>
+													</ul><img class="res-i" src="img/sAnalytics-1.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dd-group__item" id="treasury2">
+									<div class="dd-group__head dd-head-js">Казначейские операции
+									</div>
+									<div class="dd-group__content dd-content-js">
+										<div class="row gy-4">
+											<div class="dd-group__col col-lg-auto">
+												<div>
+													<ul>
+														<li>Ежедневный обзор денежного рынка: ставки, овернайт и на длинные сроки, стоимость привлечения денег, свопы на ключевую ставку, юаневые ставки, операции с ЦБ, баланс федерального казначейства</li>
+														<li>Рыночные данные в реальном времени</li>
+														<li>Макроэкономическая статистика и прогнозы</li>
+													</ul><img class="res-i" src="img/sAnalytics-2.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dd-group__item" id="assetManagement2">
+									<div class="dd-group__head dd-head-js">Управление активами
+									</div>
+									<div class="dd-group__content dd-content-js">
+										<div class="row gy-4">
+											<div class="dd-group__col col-lg-auto">
+												<div>
+													<ul>
+														<li>Обзор ключевых классов активов (акции, облигации, ПИФы, недвижимость и др.)</li>
+														<li>Консенсус-прогнозы (скоро)</li>
+														<li>Прогнозы и скринеры по акциям и облигациям</li>
+														<li>Подбор перспективных идей и монитор ликвидности</li>
+													</ul><img class="res-i" src="img/sAnalytics-3.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -339,7 +399,7 @@
 							<h3>Аналитика и информация для:</h3>
 						</div>
 						<div class="sAnalytics__row row">
-							<div class="sAnalytics__col col-4">
+							<div class="sAnalytics__col col-4" id="mandA">
 								<div class="sAnalytics__item">
 									<div class="sAnalytics__title h5">Сделки M&amp;A
 									</div>
@@ -351,7 +411,7 @@
 									</ul><img class="res-i" src="img/sAnalytics-1.png" alt="" loading="lazy"/>
 								</div>
 							</div>
-							<div class="sAnalytics__col col-4">
+							<div class="sAnalytics__col col-4" id="treasury">
 								<div class="sAnalytics__item">
 									<div class="sAnalytics__title h5">Казначейские операции
 									</div>
@@ -362,7 +422,7 @@
 									</ul><img class="res-i" src="img/sAnalytics-2.png" alt="" loading="lazy"/>
 								</div>
 							</div>
-							<div class="sAnalytics__col col-4">
+							<div class="sAnalytics__col col-4" id="assetManagement">
 								<div class="sAnalytics__item">
 									<div class="sAnalytics__title h5">Управление активами
 									</div>
@@ -410,7 +470,7 @@
 							<div class="section-title">
 								<h2>Оцените возможности <span>профессиональной аналитической платформы</span></h2>
 							</div>
-							<div class="h5 mb-5">Первые <span class="text-primary">7 дней</span> бесплатно</div><a class="btn btn-primary" href="#">Записаться на демо</a><img src="img/sEvaluate-img.png" alt="" loading="lazy"/>
+							<div class="h5 mb-5">Первые <span class="text-primary">7 дней</span> бесплатно</div><a class="btn btn-primary" href="#sForm">Записаться на демо</a><img src="img/sEvaluate-img.png" alt="" loading="lazy"/>
 						</div>
 					</div>
 				</section>
@@ -479,20 +539,37 @@
 							</div>
 							<div class="col-lg-6"><img class="res-i" src="img/sKeyRews-2.png" alt="" loading="lazy"/>
 							</div>
-						</div><a class="btn btn-primary" href="#">Получить обзор</a>
+						</div><a class="btn btn-primary" href="#sForm">Получить обзор</a>
 					</div>
 				</section>
 				<!-- end sKeyRews-->
 				<!-- start sPrices-->
 				<section class="sPrices section" id="sPrices">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>Выберите <span>свой тариф</span></h2>
+						<div class="section-title text-xl-center">
+							<div class="row">
+								<div class="col">
+									<h2>Выберите <span>свой тариф</span></h2>
+								</div>
+								<div class="col-auto d-lg-none">
+									<div class="arrow-wrap">
+										<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+											<svg class="icon icon-chevron-left ">
+												<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+											</svg>
+										</div>
+										<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+											<svg class="icon icon-chevron-right ">
+												<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="sPrices__slider sPrices__slider--js swiper">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="sPrices__row">
+									<div class="swiper-slide">
 										<div class="sPrices__item">
 											<div class="sPrices__head">
 												<div class="sPrices__title h3">Демо
@@ -510,9 +587,11 @@
 													<li>Возможность перейти на платный тариф в 1 клик</li>
 												</ul>
 											</div>
-											<div class="sPrices__footer"><a class="btn btn-primary" href="#">Получить демо бесплатно</a>
+											<div class="sPrices__footer"><a class="btn btn-primary" href="#sForm">Получить демо бесплатно</a>
 											</div>
 										</div>
+									</div>
+									<div class="swiper-slide">
 										<div class="sPrices__item sPrices__item--pro">
 											<div class="sPrices__head">
 												<div class="sPrices__title h3">ПРО
@@ -534,9 +613,11 @@
 													<li>Чат с аналитиками через Инвест-консъержа  в Телеграм</li>
 												</ul>
 											</div>
-											<div class="sPrices__footer"><a class="btn btn-primary" href="#">Начать за 49 000 ₽ в месяц</a>
+											<div class="sPrices__footer"><a class="btn btn-primary" href="#sForm">Начать за 49 000 ₽ в месяц</a>
 											</div>
 										</div>
+									</div>
+									<div class="swiper-slide">
 										<div class="sPrices__item">
 											<div class="sPrices__head">
 												<div class="sPrices__title h3">Корпоративный
@@ -555,11 +636,10 @@
 													<li>+ все возможности тарифа ПРО</li>
 												</ul>
 											</div>
-											<div class="sPrices__footer"><a class="btn btn-primary" href="#">Запросить расчет тарифа</a>
+											<div class="sPrices__footer"><a class="btn btn-primary" href="#sForm">Запросить расчет тарифа</a>
 											</div>
 										</div>
 									</div>
-								</div>
 							</div>
 						</div>
 						<div class="text-center h5 text-secondary fw-400">100% возврат в течении 30 дней если по какой-то причине вам не подошел наш продукт</div>
@@ -567,7 +647,7 @@
 				</section>
 				<!-- end sPrices-->
 				<!-- start sEcosystem-->
-				<section class="sEcosystem section text-center" id="sEcosystem">
+				<section class="sEcosystem section text-center d-none d-md-block" id="sEcosystem"> 
 					<div class="container">
 						<div class="section-title">
 							<h2>Экосистема сервисов <span class="d-block">и данных для инвестиций</span></h2>
@@ -578,12 +658,12 @@
 				<!-- start sForm-->
 				<section class="sForm section" id="sForm">
 					<div class="container">
-						<div class="section-title">
-							<h2>Запишитесь на бесплатное демо прямо сейчас</h2>
-						</div>
 						<div class="sForm__block">
 							<div class="form-wrap">
 								<form>
+									<div class="section-title">
+										<h2>Запишитесь на бесплатное демо прямо сейчас</h2>
+									</div>
 									<div class="form-wrap__input-wrap form-group">
 										<label><span class="form-wrap__input-title">Компания</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="ООО «Компания»"/>
 										</label>

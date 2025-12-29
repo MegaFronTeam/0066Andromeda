@@ -2,11 +2,11 @@ mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
-			+b.section-title
-				h2 Запишитесь на бесплатное демо прямо сейчас
 				
 			+e.block
 				+form-wrap
+					+b.section-title
+						h2 Запишитесь на бесплатное демо прямо сейчас
 					+input("ООО «Компания»",'text', "Компания")
 					+input("Виктор Иванов",'text', "Ваши имя и фамилия")
 					+input("Sample@sample.com",'email', "E-mail")

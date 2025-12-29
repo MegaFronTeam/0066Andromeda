@@ -1,7 +1,9 @@
 // start .sKeyRews
 .sKeyRews {
 	// --sPT: #{rem()};
-	--sPB: #{rem(85)};
+	@include media-breakpoint-up(md) {
+		--sPB: #{rem(85)};
+	}
 	// --sTPB: #{rem()};
 
 	&__row {

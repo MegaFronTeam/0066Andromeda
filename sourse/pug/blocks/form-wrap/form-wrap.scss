@@ -17,6 +17,7 @@
 	&__input-title {
 		position: absolute;
 		left: $input-padding-x;
+		margin-top: em(6);
 	}
 	&__btn {
 		cursor: pointer;
@@ -46,6 +47,9 @@
 @include media-breakpoint-down(xs) {
 }
 
+.form-wrap__policy {
+	font-size: 12px;
+}
 .form-check {
 }
 .form-check-input {

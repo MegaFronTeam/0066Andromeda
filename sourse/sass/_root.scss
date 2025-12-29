@@ -12,15 +12,15 @@
 	--sTPB: 40px;
 
 	--fancybox-content-color: var(--bs-body-color);
-	--swiperArrowSize: #{rem(68)};
-	--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
-	--swiperBorderColorDef: var(--bs-primary);
-	--swiperColorDef: var(--bs-primary);
-	--swiperBgDef: #ffffff;
+	--swiperArrowSize: 24px;
+	--swiperArrowPosition: 0;
+	--swiperBorderColorDef: #fff;
+	--swiperColorDef: #fff;
+	--swiperBgDef: var(--bs-primary);
 
-	--swiperBorderColorDefHover: var(--bs-primary);
-	--swiperColorDefHover: var(--bs-primary);
-	--swiperBgDefHover: #ffffff;
+	--swiperBorderColorDefHover: #fff;
+	--swiperColorDefHover: #fff;
+	--swiperBgDefHover: rgba(85, 99, 250, 0.427);
 
 	//  --carousel-button-width: 48px;
 	//  --carousel-button-height: 48px;

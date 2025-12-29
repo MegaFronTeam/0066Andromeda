@@ -2,19 +2,21 @@
 	"nav": [
 		{
 			"name": "Возможности платформы",
-			"url": "#",
+			"url": "#sCapabilities",
 			"subnav": [
-				{"name": "Акции", "url": "#"},
-				{"name": "Облигации", "url": "#"},
-				{"name": "Сырьевые рынки", "url": "#"},
-				{"name": "Казначейские операции", "url": "#"},
-				{"name": "Сделки M&A", "url": "#"},
-				{"name": "Управление активами", "url": "#"}
+				{"name": "Акции", "url": "#stocks"},
+				{"name": "Облигации", "url": "#bonds"},
+				{"name": "Фонды", "url": "#funds"},
+				{"name": "Валютный рынок", "url": "#currency"},
+				{"name": "Сырьевые рынки", "url": "#commodities"},
+				{"name": "Казначейские операции", "url": "#treasury2"},
+				{"name": "Сделки M&A", "url": "#mandA2"},
+				{"name": "Управление активами", "url": "#assetManagement2"}
 			]
 		},
-		{"name": "Видеообзор", "url": "#"},
-		{"name": "Тарифы", "url": "#"},
-		{"name": "Контакты", "url": "#"}
+		{"name": "Видеообзор", "url": "#sVideo"},
+		{"name": "Тарифы", "url": "#sPrices"},
+		{"name": "Контакты", "url": "#sForm"}
 	],
 	"social": ["fb", "instagram", "telegram"],
 	"index": {

@@ -8,13 +8,16 @@ mixin headerBlock()
 
 			.text-secondary.small.mb-3 Выберите что вас интересует:
 			+e.UL.list
-				li: a(href="#").active  Акции
-				li: a(href="#")  Облигации
-				li: a(href="#")  Сырьевые рынки
-				li: a(href="#")  Казначейские операции
-				li: a(href="#")  Сделки M&A
-				li: a(href="#")  Управление активами
-			+e.btn.btn.btn-primary(href="#") Попробовать бесплатно
+				li: a(href="#stocks")  Акции
+				li: a(href="#bonds")  Облигации
+				li: a(href="#commodities")  Сырьевые рынки
+				li.d-none.d-lg-block: a(href="#treasury")  Казначейские операции
+				li.d-none.d-lg-block: a(href="#mandA")  Сделки M&A
+				li.d-none.d-lg-block: a(href="#assetManagement")  Управление активами
+				li.d-lg-none: a(href="#treasury2")  Казначейские операции
+				li.d-lg-none: a(href="#mandA2")  Сделки M&A
+				li.d-lg-none: a(href="#assetManagement2")  Управление активами
+			+e.btn.btn.btn-primary(href="#sForm") Попробовать бесплатно
 		+e.container.container
 			+img("img/head-img.png").head-img.res-i
 			.video-row
@@ -34,4 +37,4 @@ mixin headerBlock()
 				+item(3,`Аналитика Эйлера <br> и&nbsp;других домов`)
 				+item(4,`Новости от&nbsp;СМИ и&nbsp;Telegram- <br>каналов в&nbsp;одном месте`)
 	// end headerBlock
-	a.headerBlock__btn.headerBlock__btn--fixed.btn.btn-primary.d-lg-none(href="#") Попробовать бесплатно
+	a.headerBlock__btn.headerBlock__btn--fixed.btn.btn-primary.d-lg-none(href="#sForm") Попробовать бесплатно

@@ -80,6 +80,10 @@ function eventHandler() {
 		slidesPerView: "auto",
 		freeMode: true,
 		watchOverflow: true,
+		navigation: {
+			nextEl: ".sPrices .swiper-button-next",
+			prevEl: ".sPrices .swiper-button-prev",
+		},
 	});
 
 	const swiper4 = new Swiper(".sLogos__slider--js", {
@@ -97,6 +101,28 @@ function eventHandler() {
 		},
 		grabCursor: false,
 		allowTouchMove: false,
+	});
+
+	$(".headerBlock li a, .sub-menu a").on("click", function (e) {
+		e.preventDefault();
+		const target = $(this).attr("href");
+		const $target = $(target);
+
+		if ($target.length) {
+			// Скролл до блока (плавность из CSS)
+			window.scrollTo({
+				top: $target.offset().top - 100,
+				behavior: "smooth",
+			});
+
+			// Делаем клик на dd-group__head после небольшой задержки
+			setTimeout(() => {
+				const $ddHead = $(target + " .dd-group__head");
+				if ($ddHead.length) {
+					$ddHead.trigger("click");
+				}
+			}, 100);
+		}
 	});
 
 	// Отслеживание видимости headerBlock__btn

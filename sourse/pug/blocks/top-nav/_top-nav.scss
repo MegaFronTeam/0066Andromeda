@@ -1,3 +1,10 @@
+body.fixed .top-nav {
+	.btn {
+		@include media-breakpoint-down(sm) {
+			display: none !important;
+		}
+	}
+}
 .top-nav {
 	@include media-breakpoint-up(md) {
 		--sPT: #{rem(40)};

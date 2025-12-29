@@ -28,6 +28,8 @@
 			background-position: center right;
 			--sp: 80px;
 			padding: var(--sp);
+			margin-left: -80px;
+			margin-right: -80px;
 		}
 		--sp: 20px;
 		padding: rem(40) var(--sp);
@@ -43,7 +45,7 @@
 		}
 	}
 	.form-wrap {
-		max-width: max(50%, 580px);
+		max-width: 580px;
 	}
 
 	.btn {

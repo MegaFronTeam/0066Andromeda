@@ -61,6 +61,16 @@
 .dd-group {
 	position: relative;
 	z-index: 2;
+
+	&__mob-group {
+		.dd-group__content {
+			ul {
+				text-align: left;
+			}
+			text-align: center;
+			padding-bottom: 0;
+		}
+	}
 	@include media-breakpoint-up(md) {
 		--sp-x: 40px;
 		--sp-y: 32px;
