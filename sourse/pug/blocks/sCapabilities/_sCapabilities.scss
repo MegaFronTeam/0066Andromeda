@@ -22,6 +22,7 @@
 		border-radius: 50%;
 		width: rem(1805);
 		aspect-ratio: 1;
+		pointer-events: none;
 	}
 
 	.row {
@@ -49,15 +50,23 @@
 	}
 	@include media-breakpoint-only(xl) {
 	}
-	@include media-breakpoint-down(xl) {
+	@include media-breakpoint-down(md) {
+		.dd-group {
+			margin-left: calc(1.5rem / -2);
+			margin-right: calc(1.5rem / -2);
+		}
 	}
 } // end.sCapabilities
 
 .dd-group {
 	position: relative;
 	z-index: 2;
-	--sp-x: 40px;
-	--sp-y: 32px;
+	@include media-breakpoint-up(md) {
+		--sp-x: 40px;
+		--sp-y: 32px;
+	}
+	--sp-y: 21px;
+	--sp-x: 16px;
 
 	&__item {
 		backdrop-filter: blur(18px);
@@ -91,7 +100,10 @@
 	}
 	&__head {
 		padding: var(--sp-y) var(--sp-x);
-		@include rfs(32px);
+		@include media-breakpoint-up(lg) {
+			@include rfs(32px);
+		}
+		font-size: 18px;
 		font-weight: 500;
 		position: relative;
 		&::before,

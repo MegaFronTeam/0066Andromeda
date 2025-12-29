@@ -1,8 +1,11 @@
 // start .sLogos
 .sLogos {
-	--sPT: #{rem(107)};
-	--sPB: #{rem(90)};
-	--sTPB: #{rem(50)};
+	--sPB: #{rem(40)};
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(107)};
+		--sPB: #{rem(90)};
+		--sTPB: #{rem(50)};
+	}
 	.section-title {
 		h6 {
 			span {
@@ -17,6 +20,7 @@
 	}
 	&__slider {
 		overflow: visible;
+		pointer-events: none;
 	}
 	.swiper-wrapper {
 		align-items: center;

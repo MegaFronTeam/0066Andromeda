@@ -27,6 +27,15 @@
 		border: 1px solid #fff;
 		overflow: hidden;
 		position: relative;
+		backdrop-filter: blur(18px);
+		box-shadow: 0 30px 59px 0 rgba(116, 135, 204, 0.11);
+		background:
+			rgba(240, 244, 254, 0.3),
+			radial-gradient(
+				53.86% 93.27% at 75.32% 0%,
+				#fff 0%,
+				rgba(255, 255, 255, 0) 100%
+			);
 		img {
 			margin-top: auto;
 		}

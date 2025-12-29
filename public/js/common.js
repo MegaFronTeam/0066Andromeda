@@ -86,9 +86,9 @@ function eventHandler() {
 		slidesPerView: "auto",
 		spaceBetween: 30,
 		loop: true,
-		speed: 3000,
+		speed: 4000,
 		autoplay: {
-			delay: 400,
+			delay: 0,
 			disableOnInteraction: false,
 		},
 		freeMode: {

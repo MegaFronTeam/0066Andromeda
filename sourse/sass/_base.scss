@@ -449,6 +449,7 @@ h1,
 	@include media-breakpoint-up(xl) {
 		@include rfs(60px);
 	}
+	font-size: 40px;
 }
 
 h2,
@@ -456,6 +457,7 @@ h2,
 	@include media-breakpoint-up(xl) {
 		@include rfs(42px);
 	}
+	font-size: 32px;
 	line-height: 1;
 }
 
@@ -471,6 +473,7 @@ h5,
 	@include media-breakpoint-up(xl) {
 		@include rfs(24px);
 	}
+	font-size: 18px;
 }
 
 .btn-primary {

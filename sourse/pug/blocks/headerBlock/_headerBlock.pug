@@ -17,6 +17,11 @@ mixin headerBlock()
 			+e.btn.btn.btn-primary(href="#") Попробовать бесплатно
 		+e.container.container
 			+img("img/head-img.png").head-img.res-i
+			.video-row
+				.video-item
+					video(src="video/video-1.webm" controls="none" preload="none" muted autoplay loop) 
+				.video-item
+					video(src="video/video-2.webm" controls="none" preload="none" muted autoplay loop) 
 		.container
 			+e.row.row
 				mixin item(i,t)

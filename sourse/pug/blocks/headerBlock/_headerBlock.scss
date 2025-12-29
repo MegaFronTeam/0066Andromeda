@@ -1,6 +1,9 @@
 // start .headerBlock
 .headerBlock {
-	--sPT: #{rem(132)};
+	@include media-breakpoint-up(sm) {
+		--sPT: #{rem(132)};
+	}
+	--sPT: #{rem(152)};
 	// --sPB: #{rem()};
 	--sTPB: #{rem(30)};
 	h1 {
@@ -14,6 +17,7 @@
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+			background-position: top center;
 		}
 	}
 	background-image: linear-gradient(
@@ -66,7 +70,7 @@
 		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
-		gap: rem(8) rem(30);
+		gap: rem(4) rem(30);
 		list-style: none;
 		justify-content: center;
 		margin-bottom: rem(30);
@@ -121,6 +125,31 @@
 		}
 		// margin-bottom: -10%;
 	}
+	&__container {
+		position: relative;
+		.video-row {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			z-index: 2;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1.3%;
+			padding: 0 1.25rem;
+		}
+		.video-item {
+			aspect-ratio: 625 /352;
+			position: relative;
+			video {
+				pointer-events: none;
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {
 	}
 
@@ -172,6 +201,7 @@
 			max-width: none;
 			width: initial;
 			margin-inline: -15%;
+			margin-bottom: -10%;
 		}
 	}
 
