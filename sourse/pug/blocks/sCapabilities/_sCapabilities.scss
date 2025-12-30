@@ -37,6 +37,14 @@
 	}
 	&__item {
 	}
+	.video-wrap {
+		position: relative;
+		video {
+			box-shadow: 0 16px 30px 0 rgba(123, 146, 187, 0.38);
+			border-radius: rem(12);
+			max-width: 100%;
+		}
+	}
 
 	@include media-breakpoint-up(xl) {
 	}
@@ -69,6 +77,11 @@
 			}
 			text-align: center;
 			padding-bottom: 0;
+		}
+	}
+	@include media-breakpoint-up(lg) {
+		.row {
+			flex-wrap: nowrap;
 		}
 	}
 	@include media-breakpoint-up(md) {

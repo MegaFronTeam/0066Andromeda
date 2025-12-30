@@ -18,6 +18,11 @@ class JSCCommon {
 
 		Fancybox.bind("[data-fancybox]", {
 			// Your custom options
+			Html: {
+				video: {
+					autoplay: true,
+				},
+			},
 		});
 		Fancybox.bind(link, {
 			arrows: false,

@@ -5,8 +5,8 @@ mixin sCapabilities(data)
 		.row.gy-4
 			if i
 				.col.order-lg-last
-
-					+img(`img/tab-${i}.png`).res-i
+					.video-wrap
+						video(src=`video/video-2-${i}.webm` controls="none" preload="none" muted autoplay loop) 
 			+e.col.col-lg-auto
 				block
 

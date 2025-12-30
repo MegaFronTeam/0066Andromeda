@@ -3,7 +3,7 @@
 	@include media-breakpoint-up(sm) {
 		--sPT: #{rem(132)};
 	}
-	--sPT: #{rem(152)};
+	--sPT: #{rem(172)};
 	// --sPB: #{rem()};
 	--sTPB: #{rem(30)};
 	h1 {
@@ -142,6 +142,7 @@
 			aspect-ratio: 625 /352;
 			position: relative;
 			video {
+				border-radius: rem(12);
 				pointer-events: none;
 				position: absolute;
 				inset: 0;
@@ -152,6 +153,12 @@
 	}
 
 	&__item {
+		@include media-breakpoint-down(sm) {
+			aspect-ratio: 160 / 110;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 		img {
 			margin-bottom: 1rem;
 		}

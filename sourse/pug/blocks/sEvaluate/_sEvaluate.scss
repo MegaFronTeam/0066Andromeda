@@ -19,13 +19,19 @@
 	}
 
 	.btn {
-		max-width: 260px;
+		@include media-breakpoint-up(md) {
+			max-width: 260px;
+		}
 		width: 100%;
 	}
 	&__block {
 		overflow: hidden;
 		z-index: 2;
-		padding: 60px 40px;
+		border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+		@include media-breakpoint-up(md) {
+			padding: 60px 40px;
+		}
+		padding: 40px 24px;
 		@include media-breakpoint-up(xl) {
 			padding: 120px 80px;
 			margin-inline: -80px;
@@ -37,6 +43,9 @@
 			z-index: -1;
 			max-height: 100%;
 			max-width: 70%;
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
 		}
 		&::before {
 			content: url(../img/sEvaluate-circles.svg);
@@ -64,6 +73,15 @@
 	}
 	@include media-breakpoint-only(xl) {
 	}
-	@include media-breakpoint-down(xl) {
+	@include media-breakpoint-down(md) {
+		margin-top: -30px;
 	}
 } // end.sEvaluate
+
+.f-html {
+	padding: 0;
+	background: rgba($color: #000000, $alpha: 0.8);
+	height: auto !important;
+	max-width: 800px;
+	aspect-ratio: 16/9;
+}

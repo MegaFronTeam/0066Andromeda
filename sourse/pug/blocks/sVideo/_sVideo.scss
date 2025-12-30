@@ -2,8 +2,8 @@
 .sVideo {
 	@include media-breakpoint-up(xl) {
 		--sPT: #{rem(100)};
+		--sPT: #{rem(60)};
 	}
-	--sPT: #{rem(60)};
 	--sPB: #{rem(0)};
 	// --sTPB: #{rem()};
 
@@ -14,8 +14,11 @@
 	.section-title {
 		max-width: rem(500);
 		h2 {
-			margin-bottom: -50%;
-			max-width: em(200);
+			@include media-breakpoint-up(md) {
+				margin-bottom: -50%;
+				max-width: em(200);
+			}
+			max-width: em(150);
 		}
 		span {
 			display: inline-block;
@@ -48,6 +51,9 @@
 	background-image: url(../img/video-bg.jpg);
 	cursor: pointer;
 	display: block;
+	@include media-breakpoint-down(md) {
+		padding-bottom: 20px;
+	}
 	&__front {
 		// pointer-events: none;
 	}
@@ -56,11 +62,18 @@
 		margin-right: auto;
 		max-width: 533px;
 		position: relative;
+		@include media-breakpoint-down(md) {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+			img {
+				max-width: 70%;
+				margin-top: -20%;
+				margin-left: -5%;
+			}
+		}
 	}
 	&__btn {
-		@include a-cent;
-		background: rgba(90, 140, 255, 1);
-		width: rem(96);
 		aspect-ratio: 1;
 		border-radius: 50%;
 		background-image: url(../img/play.svg);
@@ -69,17 +82,44 @@
 		background-size: 60%;
 		cursor: pointer;
 		@include mt;
-		opacity: 0.3;
+		width: rem(40);
+		background-color: $primary;
+		@include media-breakpoint-up(md) {
+			background-color: rgba(90, 140, 255, 1);
+			width: rem(96);
+			opacity: 0.3;
+			@include a-cent;
+		}
 	}
 	&:hover &__btn {
 		opacity: 0.8;
 	}
+	&__btn-wrap {
+		span {
+			color: $primary;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1;
+		}
+		@include media-breakpoint-down(md) {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			margin-bottom: 10px;
+		}
+	}
 	&__caption {
-		position: absolute;
-		left: 90%;
-		bottom: 100px;
-		width: 100%;
-		max-width: 300px;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 37px;
+			max-width: 150px;
+		}
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			left: 90%;
+			bottom: 100px;
+			width: 100%;
+			max-width: 300px;
+		}
 		text-wrap: balance;
 		font-size: 14px;
 	}
