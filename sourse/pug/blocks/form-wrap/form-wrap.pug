@@ -1,5 +1,5 @@
 mixin form-head()
-	form.js-form-validate( data-parsley-validate="") 
+	form.js-form-validate( data-parsley-validate="" ) 
 		input(class="order", name='order', type='hidden', value=`Заявка  с сайта`) 
 		block
 
@@ -34,7 +34,7 @@ mixin input(placeholder,  t='text', label, inputmode= t, name= t)
 //- wrapper for form
 mixin form-wrap(inp)
 	+b.form-wrap&attributes(attributes)
-		form
+		form(onSubmit="createObject(); return false")
 			if inp
 				input(name='example-input-field', type='hidden')
 				input(class="order", name='order', type='hidden', value=`Заявка  с сайта`) 

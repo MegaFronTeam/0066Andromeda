@@ -7,19 +7,68 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
 		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
-		<link href="css/main.min.css" rel="stylesheet"/>
-		<script>
-			function addBlock(elem) {
-				fetch(`parts/${elem}.html`)
-					.then(response => response.text())
-					.then( text => {
-						const wrap = document.querySelector(`#${elem}Wrap`);
-						wrap.insertAdjacentHTML('afterend', text);
-						wrap.previousElementSibling.remove()
-						wrap.remove();
-					});
+		<link href="css/main.min.css" rel="stylesheet"/><!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function (m, e, t, r, i, k, a) {
+		m[i] =
+			m[i] ||
+			function () {
+				(m[i].a = m[i].a || []).push(arguments);
+			};
+		m[i].l = 1 * new Date();
+		for (var j = 0; j < document.scripts.length; j++) {
+			if (document.scripts[j].src === r) {
+				return;
 			}
-		</script>
+		}
+		((k = e.createElement(t)),
+			(a = e.getElementsByTagName(t)[0]),
+			(k.async = 1),
+			(k.src = r),
+			a.parentNode.insertBefore(k, a));
+	})(
+		window,
+		document,
+		"script",
+		"https://mc.yandex.ru/metrika/tag.js?id=104159829",
+		"ym"
+	);
+
+	ym(104159829, "init", {
+		webvisor: true,
+		clickmap: true,
+		ecommerce: "dataLayer",
+		accurateTrackBounce: true,
+		trackLinks: true,
+	});
+
+	window.dataLayer = window.dataLayer || [];
+</script>
+<!-- /Yandex.Metrika counter -->
+<!-- Top.Mail.Ru counter -->
+<script type="text/javascript">
+	var _tmr = window._tmr || (window._tmr = []);
+	_tmr.push({id: "3733525", type: "pageView", start: new Date().getTime()});
+	(function (d, w, id) {
+		if (d.getElementById(id)) return;
+		var ts = d.createElement("script");
+		ts.type = "text/javascript";
+		ts.async = true;
+		ts.id = id;
+		ts.src = "https://top-fwz1.mail.ru/js/code.js";
+		var f = function () {
+			var s = d.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(ts, s);
+		};
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else {
+			f();
+		}
+	})(document, window, "tmr-code");
+</script>
+<!-- /Top.Mail.Ru counter -->
+
 	</head>
 	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
@@ -673,27 +722,27 @@
 					<div class="container">
 						<div class="sForm__block">
 							<div class="form-wrap">
-								<form>
+								<form onSubmit="createObject(); return false">
 									<div class="section-title">
 										<h2>Запишитесь на бесплатное демо прямо сейчас</h2>
 									</div>
 									<div class="form-wrap__input-wrap form-group">
-										<label><span class="form-wrap__input-title">Компания</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="ООО «Компания»"/>
+										<label><span class="form-wrap__input-title">Компания</span><input class="form-wrap__input form-control input-company" inputmode="text" name="text" type="text" placeholder="ООО «Компания»" required="required"/>
 										</label>
 									</div>
 									<!-- +e.input-wrap-->
 									<div class="form-wrap__input-wrap form-group">
-										<label><span class="form-wrap__input-title">Ваши имя и фамилия</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Виктор Иванов"/>
+										<label><span class="form-wrap__input-title">Ваши имя и фамилия</span><input class="form-wrap__input form-control input-name" inputmode="text" name="text" type="text" placeholder="Виктор Иванов" required="required"/>
 										</label>
 									</div>
 									<!-- +e.input-wrap-->
 									<div class="form-wrap__input-wrap form-group">
-										<label><span class="form-wrap__input-title">E-mail</span><input class="form-wrap__input form-control" inputmode="email" name="email" type="email" placeholder="Sample@sample.com"/>
+										<label><span class="form-wrap__input-title">E-mail</span><input class="form-wrap__input form-control input-email" inputmode="email" name="email" type="email" placeholder="Sample@sample.com" required="required"/>
 										</label>
 									</div>
 									<!-- +e.input-wrap-->
 									<div class="form-wrap__input-wrap form-group">
-										<label><span class="form-wrap__input-title">Номер телефона</span><input class="form-wrap__input form-control" inputmode="tel" name="tel" type="tel" placeholder="+7 (____) _____ ____ ____"/>
+										<label><span class="form-wrap__input-title">Номер телефона</span><input class="form-wrap__input form-control input-tel" inputmode="tel" name="tel" type="tel" placeholder="+7 (____) _____ ____ ____" required="required"/>
 										</label>
 									</div>
 									<!-- +e.input-wrap-->
@@ -738,7 +787,7 @@
 		<div id="modal-call" style="display: none">
 			<div class="modal-win">
 				<div class="form-wrap">
-					<form>
+					<form onSubmit="createObject(); return false">
 						<div class="text-center">
 							<div class="form-wrap__title form-data h3 ttu">Обратный звонок
 							</div>
@@ -772,13 +821,17 @@
 			</div>
 		</div>
 		<!-- #modal-call-->
-		<!-- end modals-->
+		<!-- end modals--><noscript>
+<div><img src="https://mc.yandex.ru/watch/104159829" style="position:absolute; left:-9999px;" alt="" /></div>
+<div><img src="https://top-fwz1.mail.ru/counter?id=3733525;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div>
+</noscript>
 		<script src="libs/jquery/jquery.min.js"></script>
 		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
 		<script src="libs/swiper/swiper-bundle.min.js"> </script>
 		<script src="libs/inputmask/inputmask.min.js"> </script>
 		<script src="libs/select2/js/select2.min.js"> </script>
-		<script src="libs/select2/js/i18n/ru.js"> </script>
+		<script src="libs/select2/js/i18n/ru.js"> </script><script src="https://files.cloudbpm.ru/Delivery/js/track-cookies.js"></script>
+<script src="https://files.cloudbpm.ru/Delivery/js/create-object.js"></script>
 		<script src="js/JSCCommon.js"></script>
 		<script src="js/common.js"></script>
 	</body>
