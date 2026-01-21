@@ -7,10 +7,10 @@ mixin sForm()
 				+form-wrap
 					+b.section-title
 						h2 Запишитесь на бесплатное демо прямо сейчас
-					+input("ООО «Компания»",'text', "Компания").input-company(required)
-					+input("Виктор Иванов",'text', "Ваши имя и фамилия").input-name(required)
-					+input("Sample@sample.com",'email', "E-mail").input-email(required)
-					+input("+7 (____) _____ ____ ____",'tel', "Номер телефона").input-tel(required)
+					+input("ООО «Компания»",'text', "Компания").input-company()
+					+input("Виктор Иванов",'text', "Ваши имя и фамилия").input-name()
+					+input("Sample@sample.com",'email', "E-mail").input-email()
+					+input("+7 (____) _____ ____ ____",'tel', "Номер телефона").input-tel()
 					+e.btn.btn.btn-primary(type="submit") Попробовать бесплатно
 					+policy
 				//- +img("img/form-img.png").res-i.d-none.d-md-block
