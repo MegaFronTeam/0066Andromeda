@@ -18,6 +18,13 @@
 body,
 html {
 	font-size: var(--bs-body-font-size);
+	font-variation-settings:
+		"slnt" 0,
+		"ital" 0;
+	// font-synthesis: none;
+	// font-style: normal;
+	// font-synthesis-style: none;
+	// font-variation-settings: normal;
 }
 html {
 	-webkit-text-size-adjust: 100%;

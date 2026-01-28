@@ -6,7 +6,15 @@ mixin sCapabilities(data)
 			if i
 				.col.order-lg-last
 					.video-wrap
-						video(src=`video/video-2-${i}.webm` controls="none" preload="none" muted autoplay loop) 
+						video(
+							autoplay
+							muted
+							loop
+							playsinline
+							preload="auto"
+							controls
+						)
+							source(src=`video/video-2-${i}.webm` type="video/webm")
 			+e.col.col-lg-auto
 				block
 

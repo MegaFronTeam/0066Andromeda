@@ -1,9 +1,19 @@
 @font-face {
   font-family: "TT Neoris";
   src: url("../fonts/TT_Neoris_Variable.woff2") format("woff2");
-  font-weight: 100 900;          /* ВАЖНО — диапазон! */
-  font-stretch: 75% 125%;        /* если есть */
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
   font-style: normal;
+  font-display: swap;
+  font-variation-settings: normal;
+}
+
+@font-face {
+  font-family: "TT Neoris";
+  src: url("../fonts/TT_Neoris_Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: italic; /* ← важно */
   font-display: swap;
 }
 
